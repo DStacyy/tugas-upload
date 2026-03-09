@@ -10,6 +10,7 @@ $folder = 'uploads/';
 $ekstensiValid = ['jpg', 'png', 'jpeg'];
 $ekstensi = strtolower(pathinfo($mamaFile, PATHINFO_EXTENSION));
 if(!in_array($ekstensi, $ekstensiValid)){
-    
+    echo "<div class='alert alert-danger'>Ekstensi tidak valid</div>";
+    exit();
 }
 ?>
