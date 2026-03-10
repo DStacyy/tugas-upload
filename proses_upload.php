@@ -22,8 +22,8 @@ if($ukuran > 1000000) {
 $namaBaru = uniqid() . "." . $ekstensi;
 
 if(move_uploaded_file($tmp, $folder . $namaBaru)){
-    echo "<div class='alert alert-sucsess'>File berhasil diupload</div>";
-    echo "<img src='" . $folder . $namaBaru . "' alt='gambar' class='img-fluid mt-3'>";
+    header("Location: gallery.php?upload=success");
+    exit;
 }else{
     echo "<div class='alert alert-danger'>Gagal upload filer</div>";
 }

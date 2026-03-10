@@ -9,17 +9,18 @@
 </head>
 <body class="container">
     <div class="container">
-        <h2>Upload Gambar</h2>
+    <h2>Upload Gambar</h2>
 
-        <form action="proses_upload.php" method="post" enctype="multipart/form-data">
-            <div class="mb-3">
-                <label for="gambar" class="form-label">Pilih Gambar</label>
-                <input type="file" name="gambar" id="gambar" class="form-control" required>
-            </div>
+    <form action="proses_upload.php" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="gambar" class="form-label">Pilih Gambar</label>
+            <input type="file" name="gambar" id="gambar" class="form-control" required>
+        </div>
 
-            <button lass="btn-primary">Upload</button>
-        </form>
-    </div>
+        <button class="btn btn-primary">Upload</button>
+        <a href="gallery.php" class="btn btn-secondary">Lihat Gallery</a>
+    </form>
+</div>
 
 </body>
 </html>
