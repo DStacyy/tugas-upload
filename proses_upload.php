@@ -8,7 +8,7 @@ $tmp = $gambar['tmp_name'];
 $folder = 'uploads/';
 
 $ekstensiValid = ['jpg', 'png', 'jpeg'];
-$ekstensi = strtolower(pathinfo($namaFile, PATHINFO_EXTENSION));
+$ekstensi = strtolower(pathinfo($gambar['name'], PATHINFO_EXTENSION));
 if(!in_array($ekstensi, $ekstensiValid)){
     echo "<div class='alert alert-danger'>Ekstensi tidak valid</div>";
     exit;
@@ -23,7 +23,7 @@ $namaBaru = uniqid() . "." . $ekstensi;
 
 if(move_uploaded_file($tmp, $folder . $namaBaru)){
     echo "<div class='alert alert-sucsess'>File berhasil diupload</div>";
-    echo "<img src='$folder$namaBaru' width='300' class='img-thumbnail'>";
+    echo "<img src='" . $folder . $namaBaru . "' alt='gambar' class='img-fluid mt-3'>";
 }else{
     echo "<div class='alert alert-danger'>Gagal upload filer</div>";
 }

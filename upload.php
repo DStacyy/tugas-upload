@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload Gambar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel= "stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
 <body class="container">
     <div class="container">
@@ -16,7 +16,7 @@
                 <input type="file" name="gambar" id="gambar" class="form-control" required>
             </div>
 
-            <buttonc lass="btn-primary">Upload</button>
+            <button lass="btn-primary">Upload</button>
         </form>
     </div>
 
